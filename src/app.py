@@ -40,7 +40,6 @@ def get_contours(image):
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (RADIUS,RADIUS))
     gradient = cv2.morphologyEx(threshold, cv2.MORPH_GRADIENT, kernel)
 
-
     contours, chierarchy = cv2.findContours(gradient, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
     return contours
