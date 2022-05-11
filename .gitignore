@@ -1,3 +1,4 @@
 .vscode/
 images_source/*
 images_target/*
+!images_target/dummy
